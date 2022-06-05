@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{    
+    background-image: linear-gradient(#00a884, #eae6df, #eae6df, #eae6df, #eae6df, #eae6df,#eae6df);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Comfortaa', cursive;
+    user-select: none;
+}
+.container {
+    background-color: #f5f3f3; 
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border-radius: 2px;
+}
+.insides{
+    display: grid;
+    grid-template-columns: 27% 73%;
+}
+.user{
+    background-color: #e4e4e4;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-right: 1px solid #f5f5f5;
+}
+.user img{
+    margin: 5px;
+    border-radius: 100px;
+    border: 2px solid #ffffff;
+}
+.left-side .search{
+    padding: 5px 4px 5px 4px;
+    background-color: #ffffff;
+    width: fit-content;
+}
+.user .user-selections{
+    padding-left: 90px;
+}
+.user-set-icons{
+    color: #959595;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 100px;
+    padding: 3px;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+}
+.user-set-icons:hover{
+    background-color: rgba(184, 184, 184, 0.548);
+}
+.search .search-button{
+    color: #606060;
+    font-size: 10px;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 0px 10px 0px 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.user #search-box{
+    padding:7px;
+    width: 230px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background-color: #e4e4e4;
+}
+/* .left-side{
+    border-right: 1px solid #8e8d8d;
+} */
+.left-side .recent-chats{
+    overflow-y: scroll;
+    height: 450px;
+}
+.left-side .recent-chats .chat{
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #ffffff;
+}
+.left-side .recent-chats .current_chat{
+    background-color: #e4e4e4;
+}
+.current_chat, .chat{
+    display: flex;
+}
+.left-side .recent-chats .chat:hover{
+    background-color: #e4e4e4;
+}
+.left-side .recent-chats .chat img{
+    margin: 5px;
+    border-radius: 100px;
+    border: 2px solid #ffffff;
+}
+.left-side .recent-chats .chat h1{
+    margin-top: 10px;
+    color: #000000;
+}
+.left-side .recent-chats .chat{
+    background-color: none;
+}
+.left-side .recent-chats .chat .user_name{
+    color: #959595;
+    font-size: 15px;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 100px;
+}
+.topbar{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    /* background-color: #000000; */
+    align-items: center;
+    background-color: #e4e4e4;
+}
+.topbar img{
+    margin: 5px;
+    border-radius: 100px;
+    border: 2px solid #ffffff;
+}
+.topbar p{
+    color: #959595;
+    font-size: 17px;
+    border-radius: 100px;
+    font-weight: 100;
+}
+.user_functions .material-icons-outlined, .user_functions .material-icons{
+    border-radius: 100%;
+    padding: 2px;
+    cursor: pointer;
+}
+.user_functions .material-icons-outlined:hover, .user_functions .material-icons:hover{
+    background-color: rgba(184, 184, 184, 0.548);
+}
+.messages{
+    height: 80%;
+    background-image: url(images/chat_background.png);
+    padding: 10px;
+}
+.msg-of-user{
+    text-align: right;
+    margin-right: 10px;
+}
+.msg-of-user span{
+    background-color: #06b790;
+    padding: 5px;
+    border-radius: 5px;
+}
+.msg-of-other{
+    text-align: left;
+    margin-left: 10px;
+}
+.msg-of-other span{
+    background-color: #f3fcfa;
+    padding: 5px;
+    border-radius: 5px;
+}
+.open-chat{
+    background-color: #e2e2e27a;
+}
+.type_send{
+    background-color: #d3d3d3;
+    padding: 3px 10px 3px 10px;
+    display: inline-flex;
+    align-items: center;
+}
+.type_send .material-icons-outlined{
+    margin-right: 5px;
+}
+.type_send #msg-typer{
+    height: 25px;
+    width: 633px;
+    padding: 0px 5px 0px 5px;
+}
+.type_send .send-btn{
+    cursor: pointer;
+}
+.type_send .send-btn:hover{
+    color: #959595;
+}
+/* .user_functions .material-icons:hover{
+    background-color: rgba(184, 184, 184, 0.548);
+} */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 2px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 2px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(176, 174, 174);
+    margin: 5px;
+}
